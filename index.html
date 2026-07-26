@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hahn Real Estate — Monopoly, For Real | BRRRR Investing in New Bern &amp; Delray Beach</title>
+<meta name="description" content="Hahn Real Estate — buying, rehabbing, renting, and holding property the honest way (BRRRR) in New Bern, NC and Delray Beach, FL. We collect the block one deed at a time, especially along the railroad. Got property to sell or want to partner? Let's talk." />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="theme-color" content="#0b3d2e" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%A9%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --green:#0b3d2e; --green-2:#12543f; --felt:#1a7a52; --gold:#e3b23c; --gold-d:#c8952a;
+    --cream:#f6f0e2; --paper:#fffdf7; --ink:#182420; --muted:#5f7268; --line:#d9d0bb;
+    /* classic property color bands (generic values) */
+    --p1:#955436; --p2:#aae0fa; --p3:#d93a96; --p4:#f7941d; --p5:#ed1b24; --p6:#1fb25a; --p7:#0072bb;
+    --sans:"Inter",system-ui,-apple-system,sans-serif; --display:"Passion One",Impact,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+  h1,h2,h3{font-family:var(--display);font-weight:900;letter-spacing:.01em;line-height:1}
+  a{color:inherit}
+  .eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;font-weight:800;color:var(--gold-d)}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:800;font-size:.98rem;padding:.85rem 1.5rem;border-radius:10px;text-decoration:none;transition:transform .15s,background .2s}
+  .btn-gold{background:linear-gradient(180deg,var(--gold),var(--gold-d));color:#241800}
+  .btn-gold:hover{transform:translateY(-2px)}
+  .btn-ghost{border:2px solid rgba(255,255,255,.4);color:#fff}
+  .btn-ghost:hover{border-color:#fff}
+
+  /* header */
+  header{position:sticky;top:0;z-index:30;background:rgba(11,61,46,.94);backdrop-filter:blur(8px);border-bottom:3px solid var(--gold)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:.6rem;color:#fff;font-family:var(--display);font-size:1.5rem;letter-spacing:.02em}
+  .brand .top{font-size:1.5rem}
+  .nav .btn{padding:.5rem 1.1rem;font-size:.85rem}
+
+  /* hero */
+  .hero{position:relative;background:radial-gradient(90% 120% at 50% -10%,rgba(227,178,60,.16),transparent 60%),linear-gradient(180deg,var(--green),var(--green-2));color:#fff;text-align:center;padding:clamp(3.2rem,8vw,5.5rem) 0 0;overflow:hidden}
+  .hero .badge{display:inline-block;background:var(--gold);color:#241800;font-family:var(--sans);font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:.35rem .9rem;border-radius:999px;margin-bottom:1.2rem}
+  .hero h1{font-size:clamp(2.8rem,8vw,5.4rem);color:#fff;text-shadow:0 3px 0 rgba(0,0,0,.18)}
+  .hero h1 .amp{color:var(--gold)}
+  .hero .sub{font-family:var(--display);font-weight:700;color:var(--gold);font-size:clamp(1.3rem,3.4vw,2rem);margin-top:.3rem}
+  .hero p.lead{color:#dbe8e1;font-size:clamp(1.05rem,2vw,1.2rem);max-width:56ch;margin:1.3rem auto 1.9rem}
+  .hero .cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-bottom:2.6rem}
+  /* board strip of colored deeds */
+  .board-strip{display:flex;height:22px;width:100%}
+  .board-strip span{flex:1}
+  .rail{display:flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap;background:#08301f;color:#cfe4d8;font-weight:700;font-size:.82rem;padding:.7rem 1rem;border-top:1px solid rgba(255,255,255,.08)}
+
+  section{padding:clamp(3rem,7vw,4.6rem) 0}
+  .head{max-width:640px;margin:0 auto 2.4rem;text-align:center}
+  .head h2{font-size:clamp(2rem,5vw,3rem);color:var(--green)}
+  .head p{color:var(--muted);margin-top:.6rem}
+  .head .eyebrow{display:block;margin-bottom:.6rem}
+
+  /* deed cards */
+  .deeds{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem}
+  .deed{background:var(--paper);border:2px solid var(--ink);border-radius:8px;overflow:hidden;box-shadow:6px 6px 0 rgba(11,61,46,.14);display:flex;flex-direction:column}
+  .deed .band{padding:.7rem;text-align:center;color:#fff;font-family:var(--display);font-size:1.1rem;letter-spacing:.03em;text-transform:uppercase;border-bottom:2px solid var(--ink)}
+  .deed .body{padding:1.1rem 1.1rem 1.3rem}
+  .deed .k{font-family:var(--display);font-size:1.5rem;color:var(--green)}
+  .deed p{font-size:.9rem;color:var(--muted);margin-top:.35rem}
+  .deed .step{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-d)}
+
+  .felt{background:var(--felt);color:#fff;border-top:5px solid var(--gold);border-bottom:5px solid var(--gold)}
+  .felt .head h2{color:#fff}
+  .felt .head p{color:#dbe8e1}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  @media(max-width:720px){.cols{grid-template-columns:1fr}}
+  .market{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:1.6rem}
+  .market h3{font-size:1.7rem;color:var(--gold)}
+  .market p{color:#dbe8e1;font-size:.96rem;margin-top:.5rem}
+  .market .tag{display:inline-block;margin-top:.9rem;background:var(--gold);color:#241800;font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .8rem;border-radius:999px}
+
+  .rails{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+  .railcard{background:var(--paper);border:2px solid var(--ink);border-radius:10px;padding:1.3rem;text-align:center;box-shadow:5px 5px 0 rgba(11,61,46,.12)}
+  .railcard .ic{font-size:2rem}
+  .railcard h3{font-family:var(--sans);font-weight:800;font-size:1.05rem;color:var(--green);margin:.4rem 0 .3rem}
+  .railcard p{font-size:.88rem;color:var(--muted)}
+
+  /* track record */
+  .record{max-width:820px;margin:0 auto;background:var(--paper);border:2px solid var(--ink);border-radius:14px;box-shadow:8px 8px 0 rgba(11,61,46,.14);overflow:hidden}
+  .record .band{background:var(--p1);color:#fff;padding:.8rem 1.4rem;font-family:var(--display);font-size:1.2rem;letter-spacing:.03em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
+  .record .in{padding:1.6rem 1.6rem 1.8rem}
+  .record p{color:var(--ink);margin-bottom:.8rem}
+  .record .honest{font-size:.85rem;color:var(--muted);font-style:italic;border-top:1px solid var(--line);padding-top:.9rem;margin-top:.4rem}
+
+  /* rules */
+  .rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+  .rule{background:var(--paper);border:1px solid var(--line);border-left:6px solid var(--gold);border-radius:10px;padding:1.2rem 1.3rem}
+  .rule h3{font-family:var(--sans);font-weight:800;font-size:1.02rem;color:var(--green);margin-bottom:.3rem}
+  .rule p{font-size:.9rem;color:var(--muted)}
+
+  /* deal / contact */
+  .deal{background:linear-gradient(180deg,var(--green-2),var(--green));color:#fff;text-align:center}
+  .deal h2{color:#fff;font-size:clamp(2rem,5vw,3rem)}
+  .deal p{color:#dbe8e1;max-width:52ch;margin:.9rem auto 1.7rem}
+  .deal .cta-row{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+  .deal .fine{font-size:.78rem;color:#a9c3b6;margin-top:1.5rem;max-width:60ch;margin-left:auto;margin-right:auto}
+
+  footer{background:#08301f;color:#bcd4c7;text-align:center;padding:2.4rem 0;font-size:.9rem}
+  footer .sdg{font-family:var(--display);color:var(--gold);font-size:1.2rem;margin-top:.6rem}
+  footer a{color:var(--gold);font-weight:700;text-decoration:none}
+
+  /* sticky text/call */
+  .fab{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;gap:.5rem}
+  .fab a{display:inline-flex;align-items:center;gap:.4rem;font-weight:800;font-size:.9rem;padding:.7rem 1.1rem;border-radius:999px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.32)}
+  .fab .t{background:linear-gradient(180deg,#2fbf71,#1f9d5b);color:#04220f}
+  .fab .c{background:linear-gradient(180deg,var(--gold),var(--gold-d));color:#241800}
+  @media(max-width:480px){.fab a span.lbl{display:none}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="top">🎩</span> Hahn Real Estate</a>
+      <a class="btn btn-gold" href="#deal">Let's Make a Deal</a>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="badge">🚂 New Bern, NC · Delray Beach, FL</span>
+      <h1>Monopoly, <span class="amp">for real.</span></h1>
+      <div class="sub">Buy · Rehab · Rent · Refinance · Repeat</div>
+      <p class="lead">We buy real property, fix it up honest, rent it right, and hold it for the long game — one deed at a time. Same board you grew up on, played for real: houses, hotels, and the railroads that connect them.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#deal">🤝 Got property to sell?</a>
+        <a class="btn btn-ghost" href="#play">See how we play →</a>
+      </div>
+    </div>
+    <div class="board-strip" aria-hidden="true">
+      <span style="background:var(--p1)"></span><span style="background:var(--p2)"></span><span style="background:var(--p3)"></span><span style="background:var(--p4)"></span><span style="background:var(--p5)"></span><span style="background:var(--p6)"></span><span style="background:var(--p7)"></span>
+    </div>
+    <div class="rail">🚂 Reading the market &nbsp;·&nbsp; 🏠 Building the block &nbsp;·&nbsp; 🏨 Holding for the long game &nbsp;·&nbsp; 🙏 Lord willing</div>
+  </section>
+
+  <!-- The Play: BRRRR -->
+  <section id="play">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The Play</span>
+        <h2>The BRRRR Strategy</h2>
+        <p>The proven way to build a real-estate portfolio without needing a fortune to start. Five moves, run with patience and honest numbers.</p>
+      </div>
+      <div class="deeds">
+        <div class="deed"><div class="band" style="background:var(--p1)">Buy</div><div class="body"><div class="step">Move 1</div><div class="k">Find the deal</div><p>Buy right — undervalued or distressed property others walk past. You make your money the day you buy.</p></div></div>
+        <div class="deed"><div class="band" style="background:var(--p4)">Rehab</div><div class="body"><div class="step">Move 2</div><div class="k">Fix it up</div><p>Rehab it honest and solid — safe, clean, and worth more. Sweat equity turns a wreck into a home.</p></div></div>
+        <div class="deed"><div class="band" style="background:var(--p6)">Rent</div><div class="body"><div class="step">Move 3</div><div class="k">Rent it right</div><p>Put in a good tenant at a fair rent. Now the property pays you every month instead of costing you.</p></div></div>
+        <div class="deed"><div class="band" style="background:var(--p7)">Refinance</div><div class="body"><div class="step">Move 4</div><div class="k">Pull your cash back</div><p>Refinance on the new, higher value — recover most of what you put in, tax-advantaged, while you keep the asset.</p></div></div>
+        <div class="deed"><div class="band" style="background:var(--p5)">Repeat</div><div class="body"><div class="step">Move 5</div><div class="k">Do it again</div><p>Take that same cash and buy the next one. That's how one house quietly becomes a street.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Board: Markets -->
+  <section class="felt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow" style="color:var(--gold)">The Board</span>
+        <h2>Collecting the block</h2>
+        <p>Two coasts, one game. We know these towns because we live them.</p>
+      </div>
+      <div class="cols">
+        <div class="market">
+          <h3>New Bern, NC 🌲</h3>
+          <p>Our home base — the historic little city at the fork of the Neuse and Trent rivers. Real neighborhoods, real value, and room to build. This is where the portfolio started and where the roots run deep.</p>
+          <span class="tag">Home Base</span>
+        </div>
+        <div class="market">
+          <h3>Delray Beach, FL 🌴</h3>
+          <p>Our sunshine branch — South Florida's most walkable downtown. A different market, same discipline: buy right, hold long, and treat every property like it matters.</p>
+          <span class="tag">Sunshine Branch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Railroads -->
+  <section id="rails">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The Signature Move</span>
+        <h2>🚂 Own the Railroads</h2>
+        <p>In the game, the railroads are the quiet money — always paying, always connecting. In real life, land along the tracks and the routes people travel is exactly where we like to plant a flag.</p>
+      </div>
+      <div class="rails">
+        <div class="railcard"><div class="ic">🚂</div><h3>Corridors, not just corners</h3><p>Property near rail lines, main roads, and the paths a growing town naturally follows.</p></div>
+        <div class="railcard"><div class="ic">🏗️</div><h3>Land &amp; lots</h3><p>Overlooked parcels and infill lots — patient buys that pay off as the block fills in.</p></div>
+        <div class="railcard"><div class="ic">🔑</div><h3>Buy &amp; hold</h3><p>We're collectors, not flippers-for-a-quick-buck. The goal is to keep the deed and pass it on.</p></div>
+        <div class="railcard"><div class="ic">🤝</div><h3>Fair deals</h3><p>Selling a house, a lot, or a fixer? We make honest, no-pressure offers and close clean.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Track Record -->
+  <section class="felt">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow" style="color:var(--gold)">Where It Started</span>
+        <h2>Our first deed</h2>
+      </div>
+      <div class="record">
+        <div class="band" style="background:var(--p1)"><span>206 Ellington St · New Bern, NC</span><span>🏠 Property No. 1</span></div>
+        <div class="in">
+          <p>Our first home on the board was a little flood-damaged house most folks had written off. We bought it right, rehabbed it with our own hands, rented it, and worked it until it was <strong>paid off free and clear.</strong></p>
+          <p>No fortune to start with — just the willingness to do the work and play the long game. That one house is proof the strategy works, and the reason we keep buying.</p>
+          <p class="honest">We keep our numbers honest and our stories real — no inflated returns, no get-rich-quick promises. Real estate takes patience, capital, and risk, and not every deal wins. This is what worked for us; results vary.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules I Play By -->
+  <section id="rules">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The House Rules</span>
+        <h2>How we play</h2>
+      </div>
+      <div class="rules">
+        <div class="rule"><h3>Honest numbers</h3><p>We run the real math before we buy. If the deal doesn't work on paper, we pass — no matter how bad we want it.</p></div>
+        <div class="rule"><h3>Patience wins</h3><p>This is the long game. We hold, we compound, and we let time do the heavy lifting.</p></div>
+        <div class="rule"><h3>People over profit</h3><p>Fair offers to sellers, safe homes for tenants, good work for our crews. Do right, and the money follows.</p></div>
+        <div class="rule"><h3>Faith first</h3><p>Every property is a second chance — for the house and for us. To God be the glory. 🙏</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Let's Make a Deal -->
+  <section class="deal" id="deal">
+    <div class="wrap">
+      <h2>Let's make a deal 🤝</h2>
+      <p>Got a house, a lot, or a fixer-upper to sell in New Bern or Delray? Want to learn the BRRRR game, or partner up? Reach out — David answers personally, no pressure and no hard sell.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="sms:+12522539629?&body=Hi%20David%2C%20about%20real%20estate%20%E2%80%94%20">💬 Text (252) 253-9629</a>
+        <a class="btn btn-ghost" href="tel:+12522539629">📞 Call David</a>
+      </div>
+      <p class="fine">Hahn Real Estate is a private real-estate investing venture. Nothing on this page is an offer to sell or a solicitation to buy any security or investment, financial advice, or a guarantee of results. Any partnership or investment, if ever offered, would be arranged separately through proper legal channels. Real estate involves risk, including loss of capital.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div><strong style="color:#fff">🎩 Hahn Real Estate</strong> — Monopoly, for real. · New Bern, NC &amp; Delray Beach, FL</div>
+      <div style="margin-top:.5rem">A <a href="https://hahntechcorp.com">Hahn Family of Companies</a> venture · Buy · Rehab · Rent · Refinance · Repeat</div>
+      <div class="sdg">Soli Deo Gloria</div>
+    </div>
+  </footer>
+
+  <div class="fab">
+    <a class="t" href="sms:+12522539629?&body=Hi%20David%2C%20about%20real%20estate%20%E2%80%94%20"><span aria-hidden="true">💬</span> <span class="lbl">Text</span></a>
+    <a class="c" href="tel:+12522539629"><span aria-hidden="true">📞</span> <span class="lbl">Call</span></a>
+  </div>
+</body>
+</html>
